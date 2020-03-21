@@ -1,3 +1,4 @@
+# coding: UTF-8
 """
 Django settings for tegaki_api project.
 
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = ["nabion.ddns.net"]
 # Application definition
 
 INSTALLED_APPS = [
+    'tegaki_digit.apps.TegakiDigitConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -118,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
+MEDIA_ROOT = './media/'
 
-MEDIA_ROOT = '/media/'
