@@ -26,7 +26,8 @@ SECRET_KEY = '_pidc!03ktm$0o4*ir8*0_-h@2k38og8f&z8de96qg2(=xlc&&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["nabion.ddns.net"]
+ALLOWED_HOSTS = ["nabion.ddns.net",
+                "localhost",]
 
 
 # Application definition
